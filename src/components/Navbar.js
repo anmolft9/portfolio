@@ -6,7 +6,7 @@ import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import resume from "../Assets/resume.docx";
+import resume from "../Assets/Anmol Bhattarai_CV.pdf";
 
 
 
