@@ -47,10 +47,6 @@ function About() {
           <Techstack iconName="devicon-bootstrap-plain-wordmark" />
           <Techstack iconName="devicon-html5-plain" />
           <Techstack iconName="devicon-redux-original" />
-
-          
-
-
         </Row>
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
@@ -60,8 +56,6 @@ function About() {
           <Techstack iconName="cib-postman" />
           <Techstack iconName="cib-heroku" />
           <Techstack iconName="devicon-chrome-plain" />
-
-          
         </Row>
       </Container>
     </Container>

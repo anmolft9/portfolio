@@ -6,6 +6,7 @@ import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import AdminPanel from "../../Assets/Projects/AdminPanel.png";
+import ExpenseTracker from "../../Assets/Projects/ExpenseTracker.png";
 import ColorGame from "../../Assets/Projects/ColorGame.png";
 import List from "../../Assets/Projects/To-Do-List.png";
 import Quiz from "../../Assets/Projects/Quiz.png";
@@ -31,6 +32,15 @@ function Projects() {
               title="AdminPanel CMS"
               description="The goal of the project was to develop an admin panel for an ecommerce website. I have built this game using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
               link="https://github.com/anmolft9/FullStack_CMS_Setup"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ExpenseTracker}
+              isBlog={false}
+              title="Expense Tracker "
+              description="The goal of the project was to develop an application that would track our expenses or income accordingly. I have built this game using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
+              link="https://github.com/anmolft9/ExpenseTracker_Redux"
             />
           </Col>
 
