@@ -12,7 +12,7 @@ function AboutCard() {
             Hello, My name is <span className="purple">Anmol Bhattarai </span>
             originally from <span className="purple"> Chitwan, Nepal </span>
             but now residing in{" "}
-            <span className="purple"> Canberra, Australia.</span>
+            <span className="purple"> QueanBeyan NSW Australia.</span>
             <br />I have studied Master's in Technology(Software Engineering)
             from Federation University
             <br />

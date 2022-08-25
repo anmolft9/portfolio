@@ -5,12 +5,12 @@ import Particle from "../Particle";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import AdminPanel from "../../Assets/Projects/AdminPanel.png";
 import ColorGame from "../../Assets/Projects/ColorGame.png";
 import List from "../../Assets/Projects/To-Do-List.png";
 import Quiz from "../../Assets/Projects/Quiz.png";
 import YelpCamp from "../../Assets/Projects/Yelp-Camp.png";
 import imageSearch from "../../Assets/Projects/imageSearch.png";
-
 
 function Projects() {
   return (
@@ -24,6 +24,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={AdminPanel}
+              isBlog={false}
+              title="AdminPanel CMS"
+              description="The goal of the project was to develop an admin panel for an ecommerce website. I have built this game using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
+              link="https://github.com/anmolft9/FullStack_CMS_Setup"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ColorGame}
@@ -72,7 +82,7 @@ function Projects() {
               description="It is a simple image searching app that I have developed using React JAVASCRIPT, CSS, Semantic UI and API from unsplash"
               link="https://github.com/anmolft9/lookforImage/tree/master"
             />
-            </Col>
+          </Col>
         </Row>
       </Container>
     </Container>
