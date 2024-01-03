@@ -9,9 +9,13 @@ function Home2() {
       <Container>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>
+              FIND ME ON <span />
+              <i class="fa-solid fa-arrow-down"></i>
+            </h1>
             <p>
-              Please, feel free to <span className="purple">connect </span>with me
+              Please, feel free to <span className="purple">connect </span>with
+              me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
