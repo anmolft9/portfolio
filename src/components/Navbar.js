@@ -8,8 +8,6 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import resume from "../Assets/AnmolBhattarai_Resume.docx";
 
-
-
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -32,7 +30,6 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -69,13 +66,11 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            
             <Nav.Item className="cv-btn">
-            <Button variant="primary" href={resume} target="_blank" >
-            <i className="fas fa-download">&nbsp;</i>Download CV
-          </Button>
+              <Button variant="primary" href={resume} target="_blank">
+                <i className="fas fa-download">&nbsp;</i>Download CV
+              </Button>
             </Nav.Item>
-            
           </Nav>
         </Navbar.Collapse>
       </Container>

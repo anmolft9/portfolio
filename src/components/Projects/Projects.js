@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -16,7 +15,7 @@ import imageSearch from "../../Assets/Projects/imageSearch.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
@@ -38,7 +37,7 @@ function Projects() {
             <ProjectCard
               imgPath={ExpenseTracker}
               isBlog={false}
-              title="Expense Tracker "
+              title="Expense Tracker"
               description="The goal of the project was to develop an application that would track our expenses or income accordingly. I have built this game using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
               link="https://github.com/anmolft9/ExpenseTracker_Redux"
             />

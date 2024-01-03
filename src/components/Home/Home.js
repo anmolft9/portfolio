@@ -3,15 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import homeLogo from "../../Assets/home-main.svg";
-import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import ScrollToTop from "../ScrollToTop";
 
 function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
@@ -20,7 +19,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-               I am
+                I am
                 <strong className="main-name"> Anmol Bhattarai</strong>
               </h1>
 
@@ -36,6 +35,7 @@ function Home() {
         </Container>
       </Container>
       <Home2 />
+      <ScrollToTop />
     </section>
   );
 }
