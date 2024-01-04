@@ -29,7 +29,7 @@ function Projects() {
               imgPath={AdminPanel}
               isBlog={false}
               title="AdminPanel CMS"
-              description="The goal of the project was to develop an admin panel for an ecommerce website. I have built this game using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
+              description="The goal of the project was to develop an admin panel for an ecommerce website. I have built this application using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
               link="https://github.com/anmolft9/FullStack_CMS_Setup"
             />
           </Col>

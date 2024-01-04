@@ -9,27 +9,32 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hello, My name is <span className="purple">Anmol Bhattarai </span>
-            originally from <span className="purple"> Chitwan, Nepal </span>
-            but now residing in{" "}
-            <span className="purple"> QueanBeyan NSW Australia.</span>
-            <br />I have studied Master's in Technology(Software Engineering)
-            from Federation University
+            Greetings! I'm <span>Anmol Bhattarai</span>, a Software/Web
+            Developer based in Melbourne, VIC, Australia. I hold a {""}
+            <span>Master's Degree in Technology</span> from Federation
+            University.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Key Highlights:
           </p>
           <ul>
             <li className="about-activity">
-              <i className="far fa-hand-point-right"></i> Playing Guitar and
-              Piano
+              <i className="far fa-hand-point-right"></i>{" "}
+              <span>Expertise:</span> Software Engineering with a focus on
+              coding and innovative solutions.
             </li>
             <li className="about-activity">
-              <i className="far fa-hand-point-right"></i> Watching Soccer( I am
-              a Chelsea FC fan)
+              <i className="far fa-hand-point-right"></i>{" "}
+              <span>Musical Skills:</span> Proficient in guitar and piano
             </li>
             <li className="about-activity">
-              <i className="far fa-hand-point-right"></i> Travelling
+              <i className="far fa-hand-point-right"></i>{" "}
+              <span>Sports Enthusiast:</span> Passionate Chelsea FC fan
+            </li>
+            <li className="about-activity">
+              <i className="far fa-hand-point-right"></i>
+              <span>Traveler:</span> Enthusiastic about exploring diverse
+              cultures
             </li>
           </ul>
         </blockquote>

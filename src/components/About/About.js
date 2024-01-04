@@ -20,13 +20,15 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              Know Who <strong>I'M</strong>
             </h1>
             <Aboutcard />
           </Col>
           <Col
             md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            style={{
+              paddingBottom: "150px",
+            }}
             className="about-img"
           >
             <img src={laptopImg} alt="about" className="img-fluid" />
@@ -42,18 +44,21 @@ function About() {
           <Techstack iconName="devicon-react-original-wordmark" />
           <Techstack iconName="devicon-mongodb-plain-wordmark" />
           <Techstack iconName="devicon-git-plain-wordmark" />
+          <Techstack iconName="devicon-css3-plain-wordmark" />
           <Techstack iconName="devicon-bootstrap-plain-wordmark" />
-          <Techstack iconName="devicon-html5-plain" />
+          <Techstack iconName="devicon-html5-plain-wordmark" />
           <Techstack iconName="devicon-redux-original" />
+          <Techstack iconName="devicon-jest-plain" />
         </Row>
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-          <Techstack iconName="cib-visual-studio-code" />
+          <Techstack iconName="devicon-vscode-plain-wordmark" />
+          <Techstack iconName="devicon-github-original-wordmark" />
           <Techstack iconName="cib-postman" />
-          <Techstack iconName="cib-heroku" />
-          <Techstack iconName="devicon-chrome-plain" />
+          <Techstack iconName="devicon-heroku-plain-wordmark" />
+          <Techstack iconName="devicon-chrome-plain-wordmark" />
         </Row>
       </Container>
     </Container>

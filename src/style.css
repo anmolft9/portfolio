@@ -227,7 +227,6 @@
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -287,17 +286,8 @@
   border-radius: 2px;
 }
 
-.down-arrow:after {
-  content: " ";
-  position: absolute;
-  top: 12px;
-  left: -10px;
-  width: 16px;
-  height: 16px;
-  border-bottom: 4px solid;
-  border-right: 4px solid;
-  border-radius: 4px;
-  transform: rotateZ(45deg);
+span {
+  color: purple;
 }
 
 .home-about-social {
@@ -501,6 +491,7 @@
 @media (max-width: 767px) {
   .about-img {
     padding-top: 0 !important;
+    width: 50%;
   }
 }
 

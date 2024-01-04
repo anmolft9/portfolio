@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import homeLogo from "../../Assets/home-main.svg";
+import homeLogo from "../../Assets/home-main.png";
 import Home2 from "./Home2";
 import Type from "./Type";
 import ScrollToTop from "../ScrollToTop";
@@ -29,7 +29,11 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img src={homeLogo} alt="home pic" className="img-fluid" />
+              <img
+                src={homeLogo}
+                alt="home pic"
+                className="rounded-left block-example border border-info border-left-0 img-fluid"
+              />
             </Col>
           </Row>
         </Container>
