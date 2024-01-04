@@ -74,7 +74,7 @@
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #f9f4ef !important;
+  background-color: rgb(75, 42, 42) !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -128,7 +128,7 @@
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: rgb(75, 42, 42) !important;
 }
 
 .logo {
@@ -392,8 +392,8 @@ span {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(239, 238, 240, 0.459) !important;
-  color: #020826 !important;
+  box-shadow: 0 4px 5px 3px #93b7d2 !important;
+  color: #581c65 !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
@@ -415,23 +415,13 @@ span {
 .btn-primary {
   color: #fff !important;
   background-color: #8c7851 !important;
-  border-color: #623686 !important;
+  border-color: #801ff6 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
+  background-color: #994ff3 !important;
   border-color: #6d20c5d7 !important;
-}
-.btn:focus {
-  outline: none !important;
-  box-shadow: none !important;
-}
-.project-heading {
-  color: #020826 !important;
-  font-size: 2.3em !important;
-  font-weight: 500 !important;
-  padding-top: 10px !important;
 }
 
 /* --------- */

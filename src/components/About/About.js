@@ -4,7 +4,7 @@ import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import laptopImg from "../../Assets/about.svg";
 
 function About() {
   return (
