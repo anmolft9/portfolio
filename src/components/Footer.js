@@ -3,7 +3,7 @@ import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 
-function Footer() {
+export const Footer = () => {
   return (
     <Container fluid className="footer">
       <div md="4" className="d-flex justify-content-center">
@@ -11,6 +11,4 @@ function Footer() {
       </div>
     </Container>
   );
-}
-
-export default Footer;
+};

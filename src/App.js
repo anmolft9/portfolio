@@ -1,11 +1,11 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import { Preloader } from "../src/components/Pre.js";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
-import Footer from "./components/Footer";
+import { NavBar } from "./components/Navbar";
+import { Home } from "./components/Home/Home";
+import { About } from "./components/About/About";
+import { Projects } from "./components/Projects/Projects";
+import { Footer } from "./components/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,8 +19,8 @@ function App() {
   return (
     <Router>
       <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
+      <div className="App">
+        <NavBar />
 
         <Switch>
           <Route path="/" exact component={Home} />

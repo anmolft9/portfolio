@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
+import { Techstack } from "./Techstack";
+import { Aboutcard } from "./AboutCard";
 import laptopImg from "../../Assets/about.svg";
 
-function About() {
+export const About = () => {
   return (
     <Container fluid className="about-section">
       <Container>
@@ -34,9 +34,7 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
-        </h1>
+        <h1 className="project-heading">Professional Skillset</h1>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
           <Techstack iconName="devicon-javascript-plain " />
           <Techstack iconName="devicon-nodejs-plain-wordmark " />
@@ -50,9 +48,7 @@ function About() {
           <Techstack iconName="devicon-redux-original" />
           <Techstack iconName="devicon-jest-plain" />
         </Row>
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
+        <h1 className="project-heading">Tools I use</h1>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
           <Techstack iconName="devicon-vscode-plain-wordmark" />
           <Techstack iconName="devicon-github-original-wordmark" />
@@ -63,6 +59,4 @@ function About() {
       </Container>
     </Container>
   );
-}
-
-export default About;
+};

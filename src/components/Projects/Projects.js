@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
+import { ProjectCard } from "./ProjectCards.js";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -12,7 +12,7 @@ import Quiz from "../../Assets/Projects/Quiz.png";
 import YelpCamp from "../../Assets/Projects/Yelp-Camp.png";
 import imageSearch from "../../Assets/Projects/imageSearch.png";
 
-function Projects() {
+export const Projects = () => {
   return (
     <Container fluid className="project-section">
       {/* <Particle /> */}
@@ -96,6 +96,4 @@ function Projects() {
       </Container>
     </Container>
   );
-}
-
-export default Projects;
+};

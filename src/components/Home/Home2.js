@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Home2() {
+export const Home2 = () => {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -64,5 +64,4 @@ function Home2() {
       </Container>
     </Container>
   );
-}
-export default Home2;
+};

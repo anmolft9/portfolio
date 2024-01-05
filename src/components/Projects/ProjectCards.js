@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function ProjectCards(props) {
+export const ProjectCard = (props) => {
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -19,5 +19,4 @@ function ProjectCards(props) {
       </Card.Body>
     </Card>
   );
-}
-export default ProjectCards;
+};

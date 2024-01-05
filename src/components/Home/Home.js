@@ -3,11 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import homeLogo from "../../Assets/home-main.png";
-import Home2 from "./Home2";
-import Type from "./Type";
-import ScrollToTop from "../ScrollToTop";
+import { Home2 } from "./Home2";
+import { Type } from "./Type";
 
-function Home() {
+export const Home = () => {
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -32,16 +31,13 @@ function Home() {
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="rounded-left block-example border border-info border-left-0 img-fluid"
+                className="rounded-left block-example border border-info border-shadow border-left-0 img-fluid"
               />
             </Col>
           </Row>
         </Container>
       </Container>
       <Home2 />
-      <ScrollToTop />
     </section>
   );
-}
-
-export default Home;
+};

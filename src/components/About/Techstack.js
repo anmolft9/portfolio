@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Techstack = (prop) => {
+export const Techstack = (prop) => {
   return (
     <div>
       <Col xs={4} md={2} className="tech-icons">
@@ -12,5 +12,3 @@ const Techstack = (prop) => {
     </div>
   );
 };
-
-export default Techstack;

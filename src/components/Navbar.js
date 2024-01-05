@@ -8,17 +8,17 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import resume from "../Assets/AnmolBhattarai_Resume.docx";
 
-function NavBar() {
+export const NavBar = () => {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  function scrollHandler() {
+  const scrollHandler = () => {
     if (window.scrollY >= 20) {
       updateNavbar(true);
     } else {
       updateNavbar(false);
     }
-  }
+  };
 
   window.addEventListener("scroll", scrollHandler);
 
@@ -76,6 +76,4 @@ function NavBar() {
       </Container>
     </Navbar>
   );
-}
-
-export default NavBar;
+};
