@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import homeLogo from "../../Assets/home-main.png";
 import { Home2 } from "./Home2";
 import { Type } from "./Type";
+import { Slideshow } from "../Slides";
 
 export const Home = () => {
   return (
@@ -36,6 +37,11 @@ export const Home = () => {
             </Col>
           </Row>
         </Container>
+        <Row>
+          <Col>
+            <Slideshow />
+          </Col>
+        </Row>
       </Container>
       <Home2 />
     </section>
