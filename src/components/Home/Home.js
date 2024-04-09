@@ -5,7 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import homeLogo from "../../Assets/home-main.png";
 import { Home2 } from "./Home2";
 import { Type } from "./Type";
-import { Slideshow } from "../Slides";
+import { ProjectCard } from "../Projects/ProjectCards";
+import AdminPanel from "../../Assets/Projects/AdminPanel.png";
+
+// import { Slideshow } from "../Slides";
 
 export const Home = () => {
   return (
@@ -14,7 +17,7 @@ export const Home = () => {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h1 style={{ paddingBottom: 25 }} className="heading">
                 Hi There! <span className="wave">👋🏻</span>
               </h1>
 
@@ -23,7 +26,14 @@ export const Home = () => {
                 <strong className="main-name"> Anmol Bhattarai</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div
+                style={{
+                  marginTop: 40,
+                  paddingRight: 200,
+                  marginRight: -20,
+                  textAlign: "right",
+                }}
+              >
                 <Type />
               </div>
             </Col>
@@ -37,11 +47,18 @@ export const Home = () => {
             </Col>
           </Row>
         </Container>
-        <Row>
-          <Col>
-            <Slideshow />
+
+        <div style={{ marginTop: 100 }}>
+          <Col md={6} className="project-card">
+            <ProjectCard
+              imgPath={AdminPanel}
+              isBlog={false}
+              title="AdminPanel CMS"
+              description="The goal of the project was to develop an admin panel for an ecommerce website. I have built this application using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
+              link="https://github.com/anmolft9/FullStack_CMS_Setup"
+            />
           </Col>
-        </Row>
+        </div>
       </Container>
       <Home2 />
     </section>

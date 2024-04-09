@@ -14,7 +14,7 @@ export const Slideshow = () => {
 
   return (
     <Slide>
-      {/* <div className="each-slide-effect">
+      <div className="each-slide-effect">
         <div style={{ backgroundImage: `url(${images[0]})` }}>
           <span>Slide 1</span>
         </div>
@@ -28,10 +28,11 @@ export const Slideshow = () => {
         <div style={{ backgroundImage: `url(${images[2]})` }}>
           <span>Slide 3</span>
         </div>
-      </div> */}
+      </div>
 
       <Col md={4} className="project-card">
         <ProjectCard
+          // width="100"
           imgPath={Quiz}
           isBlog={false}
           title="Expense Tracker"
