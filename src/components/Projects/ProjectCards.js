@@ -14,7 +14,11 @@ export const ProjectCard = (props) => {
           {props.description}
         </Card.Text>
         <Button variant="primary" href={props.link} target="_blank">
-          <i className="cil-external-link">&nbsp;</i>
+          Source Code
+        </Button>
+        {"  "}
+        <Button variant="primary" href={props.live} target="_blank">
+          Live
         </Button>
       </Card.Body>
     </Card>

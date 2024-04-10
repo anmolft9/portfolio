@@ -7,6 +7,7 @@ import { Home2 } from "./Home2";
 import { Type } from "./Type";
 import { ProjectCard } from "../Projects/ProjectCards";
 import AdminPanel from "../../Assets/Projects/AdminPanel.png";
+import { Slide } from "react-slideshow-image";
 
 // import { Slideshow } from "../Slides";
 
@@ -31,14 +32,16 @@ export const Home = () => {
                   marginTop: 40,
                   paddingRight: 200,
                   marginRight: -20,
-                  textAlign: "right",
+                  textAlign: "left",
                 }}
               >
-                <Type />
+                <div className="d-flex justify-content-center">
+                  <Type />
+                </div>
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} className="d-flex justify-content-center">
               <img
                 src={homeLogo}
                 alt="home pic"
@@ -49,15 +52,38 @@ export const Home = () => {
         </Container>
 
         <div style={{ marginTop: 100 }}>
-          <Col md={6} className="project-card">
-            <ProjectCard
-              imgPath={AdminPanel}
-              isBlog={false}
-              title="AdminPanel CMS"
-              description="The goal of the project was to develop an admin panel for an ecommerce website. I have built this application using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
-              link="https://github.com/anmolft9/FullStack_CMS_Setup"
-            />
-          </Col>
+          <h3 className="d-flex justify-content-center">
+            Some of my Best Works
+          </h3>
+          <Row>
+            <Col md={6} className="project-card">
+              <ProjectCard
+                imgPath={AdminPanel}
+                isBlog={false}
+                title="AdminPanel CMS"
+                description="The goal of the project was to develop an admin panel for an ecommerce website. I have built this application using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
+                link="https://github.com/anmolft9/FullStack_CMS_Setup"
+              />
+            </Col>
+            <Col md={6} className="project-card">
+              <ProjectCard
+                imgPath={AdminPanel}
+                isBlog={false}
+                title="AdminPanel CMS"
+                description="The goal of the project was to develop an admin panel for an ecommerce website. I have built this application using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
+                link="https://github.com/anmolft9/FullStack_CMS_Setup"
+              />
+            </Col>
+            <Col md={6} className="project-card">
+              <ProjectCard
+                imgPath={AdminPanel}
+                isBlog={false}
+                title="AdminPanel CMS"
+                description="The goal of the project was to develop an admin panel for an ecommerce website. I have built this application using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
+                link="https://github.com/anmolft9/FullStack_CMS_Setup"
+              />
+            </Col>
+          </Row>
         </div>
       </Container>
       <Home2 />

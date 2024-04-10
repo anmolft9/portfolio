@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCards.js";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Typewriter from "typewriter-effect";
 
 import AdminPanel from "../../Assets/Projects/AdminPanel.png";
 import ExpenseTracker from "../../Assets/Projects/ExpenseTracker.png";
@@ -17,20 +18,38 @@ export const Projects = () => {
     <Container fluid className="project-section">
       {/* <Particle /> */}
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
+        <Row>
+          <Col>
+            <div style={{ color: "#8c7851" }} className="mt-2 mb-5 ts-5">
+              <h3 color="">My Github Contributions</h3>
+              <img
+                src="http://ghchart.rshah.org/anmolft9"
+                alt="anmol Bhattarai's Github chart"
+              />
+            </div>
+          </Col>
+        </Row>
+        {/* <h1 style={{ color: "#8c7851" }} className="project-heading">
+          My Projects On Github
+        </h1> */}
+        <Typewriter
+          options={{
+            strings: [
+              '<span style="color: #8c7851;">My Github Projects</span>',
+            ],
+            autoStart: true,
+            loop: true,
+            deleteSpeed: 30,
+          }}
+        />
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={AdminPanel}
-              isBlog={false}
               title="AdminPanel CMS"
               description="The goal of the project was to develop an admin panel for an ecommerce website. I have built this application using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
               link="https://github.com/anmolft9/FullStack_CMS_Setup"
+              live="https://github.com/anmolft9/FullStack_CMS_Setup"
             />
           </Col>
           <Col md={4} className="project-card">
