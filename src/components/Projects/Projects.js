@@ -16,7 +16,6 @@ import imageSearch from "../../Assets/Projects/imageSearch.png";
 export const Projects = () => {
   return (
     <Container fluid className="project-section">
-      {/* <Particle /> */}
       <Container>
         <Row>
           <Col>
