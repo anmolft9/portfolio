@@ -3,15 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import homeLogo from "../../Assets/home-main.png";
-import { Home2 } from "./Home2";
-import { Type } from "./Type";
+import { Home2 } from "./Home2.js";
+import { Type } from "./Type.js";
 import AdminPanel from "../../Assets/Projects/AdminPanel.png";
 import ColorGame from "../../Assets/Projects/ColorGame.png";
 import { ProjectCard } from "../Projects/ProjectCards.js";
-
-// import { Slide } from "react-slideshow-image";
-
-// import { Slideshow } from "../Slides";
 
 export const Home = () => {
   return (
@@ -66,7 +62,7 @@ export const Home = () => {
                 link="https://github.com/anmolft9/FullStack_CMS_Setup"
               />
             </Col>
-            <Col md={4} className="project-card">
+            <Col md={6} className="project-card">
               <ProjectCard
                 imgPath={ColorGame}
                 title="Color Game"
