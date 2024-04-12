@@ -12,6 +12,7 @@ import List from "../../Assets/Projects/To-Do-List.png";
 import Quiz from "../../Assets/Projects/Quiz.png";
 import YelpCamp from "../../Assets/Projects/Yelp-Camp.png";
 import imageSearch from "../../Assets/Projects/imageSearch.png";
+import MovieApi from "../../Assets/Projects/MovieApi.png";
 
 export const Projects = () => {
   return (
@@ -21,6 +22,7 @@ export const Projects = () => {
           <Col>
             <div style={{ color: "#8c7851" }} className="mt-2 mb-5 ts-5">
               <h3 color="">My Github Contributions</h3>
+              {/* github green dots  */}
               <img
                 src="http://ghchart.rshah.org/anmolft9"
                 alt="anmol Bhattarai's Github chart"
@@ -48,16 +50,24 @@ export const Projects = () => {
               title="AdminPanel CMS"
               description="The goal of the project was to develop an admin panel for an ecommerce website. I have built this application using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
               link="https://github.com/anmolft9/FullStack_CMS_Setup"
-              live="https://github.com/anmolft9/FullStack_CMS_Setup"
             />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ExpenseTracker}
-              isBlog={false}
               title="Expense Tracker"
               description="The goal of the project was to develop an application that would track our expenses or income accordingly. I have built this game using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
               link="https://github.com/anmolft9/ExpenseTracker_Redux"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={MovieApi}
+              title="Movie Api"
+              description="The goal of the project was to develop an application that would let user to categorise the movie that would be provided through api call into happy or sad genre. The Api call would also give the imdb information. I have built this application using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
+              link="https://github.com/anmolft9/Movie_React"
+              live="https://movie-react-kappa.vercel.app"
             />
           </Col>
 

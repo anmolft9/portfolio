@@ -5,9 +5,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import homeLogo from "../../Assets/home-main.png";
 import { Home2 } from "./Home2";
 import { Type } from "./Type";
-import { ProjectCard } from "../Projects/ProjectCards";
 import AdminPanel from "../../Assets/Projects/AdminPanel.png";
-import { Slide } from "react-slideshow-image";
+import ColorGame from "../../Assets/Projects/ColorGame.png";
+import { ProjectCard } from "../Projects/ProjectCards.js";
+
+// import { Slide } from "react-slideshow-image";
 
 // import { Slideshow } from "../Slides";
 
@@ -59,28 +61,18 @@ export const Home = () => {
             <Col md={6} className="project-card">
               <ProjectCard
                 imgPath={AdminPanel}
-                isBlog={false}
                 title="AdminPanel CMS"
                 description="The goal of the project was to develop an admin panel for an ecommerce website. I have built this application using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
                 link="https://github.com/anmolft9/FullStack_CMS_Setup"
               />
             </Col>
-            <Col md={6} className="project-card">
+            <Col md={4} className="project-card">
               <ProjectCard
-                imgPath={AdminPanel}
-                isBlog={false}
-                title="AdminPanel CMS"
-                description="The goal of the project was to develop an admin panel for an ecommerce website. I have built this application using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
-                link="https://github.com/anmolft9/FullStack_CMS_Setup"
-              />
-            </Col>
-            <Col md={6} className="project-card">
-              <ProjectCard
-                imgPath={AdminPanel}
-                isBlog={false}
-                title="AdminPanel CMS"
-                description="The goal of the project was to develop an admin panel for an ecommerce website. I have built this application using HTML, CSS, JAVASCRIPT, ReactJS, Redux, MonogDB and Bootstrap-React."
-                link="https://github.com/anmolft9/FullStack_CMS_Setup"
+                imgPath={ColorGame}
+                title="Color Game"
+                description="This is a game in which the user has to click on the right color based on the RGB numbers. I have built this game using HTML, CSS and Vanilla Javascript."
+                link="https://github.com/anmolft9/Color-Game"
+                live="https://colorfulgame.vercel.app"
               />
             </Col>
           </Row>

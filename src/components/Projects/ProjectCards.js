@@ -17,9 +17,11 @@ export const ProjectCard = (props) => {
           Source Code
         </Button>
         {"  "}
-        <Button variant="primary" href={props.live} target="_blank">
-          Live
-        </Button>
+        {props.live && (
+          <Button variant="primary" href={props.live} target="_blank">
+            Live
+          </Button>
+        )}
       </Card.Body>
     </Card>
   );
