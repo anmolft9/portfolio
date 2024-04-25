@@ -44,6 +44,7 @@ export const Projects = () => {
           }}
         />
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          {/* Admin Panel */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={AdminPanel}
@@ -52,6 +53,8 @@ export const Projects = () => {
               link="https://github.com/anmolft9/FullStack_CMS_Setup"
             />
           </Col>
+
+          {/* Expense tracker */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ExpenseTracker}
@@ -61,6 +64,7 @@ export const Projects = () => {
             />
           </Col>
 
+          {/* Movie API */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={MovieApi}
@@ -71,6 +75,7 @@ export const Projects = () => {
             />
           </Col>
 
+          {/* Color Game */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ColorGame}
@@ -78,9 +83,23 @@ export const Projects = () => {
               title="Color Game"
               description="This is a game in which the user has to click on the right color based on the RGB numbers. I have built this game using HTML, CSS and Vanilla Javascript."
               link="https://github.com/anmolft9/Color-Game"
+              live="https://colorfulgame.vercel.app"
             />
           </Col>
 
+          {/* Prank Calculator */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ColorGame}
+              isBlog={false}
+              title="Color Game"
+              description="This is an app which is called the prank calculator, what it does is ,it gives correct value for few calculations and gives incorrect values in between to prank the user, also has got the audio sound to that. I have built this App using React."
+              link="https://github.com/anmolft9/Color-Game"
+              live="https://colorfulgame.vercel.app"
+            />
+          </Col>
+
+          {/* Quiz */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Quiz}
@@ -91,6 +110,7 @@ export const Projects = () => {
             />
           </Col>
 
+          {/* To Do List */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={List}
