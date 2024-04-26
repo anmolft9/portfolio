@@ -13,6 +13,7 @@ import Quiz from "../../Assets/Projects/Quiz.png";
 import YelpCamp from "../../Assets/Projects/Yelp-Camp.png";
 import imageSearch from "../../Assets/Projects/imageSearch.png";
 import MovieApi from "../../Assets/Projects/MovieApi.png";
+import PrankCalculator from "../../Assets/Projects/PrankCalculator.png";
 
 export const Projects = () => {
   return (
@@ -79,7 +80,6 @@ export const Projects = () => {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ColorGame}
-              isBlog={false}
               title="Color Game"
               description="This is a game in which the user has to click on the right color based on the RGB numbers. I have built this game using HTML, CSS and Vanilla Javascript."
               link="https://github.com/anmolft9/Color-Game"
@@ -90,12 +90,11 @@ export const Projects = () => {
           {/* Prank Calculator */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={ColorGame}
-              isBlog={false}
-              title="Color Game"
+              imgPath={PrankCalculator}
+              title="The Prank Calculator"
               description="This is an app which is called the prank calculator, what it does is ,it gives correct value for few calculations and gives incorrect values in between to prank the user, also has got the audio sound to that. I have built this App using React."
-              link="https://github.com/anmolft9/Color-Game"
-              live="https://colorfulgame.vercel.app"
+              link="https://github.com/anmolft9/Prank_Calculator_React"
+              live="https://prank-calculator-react.vercel.app/"
             />
           </Col>
 
@@ -103,7 +102,6 @@ export const Projects = () => {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Quiz}
-              isBlog={false}
               title="Quiz"
               description="It is a simple QUIZ built using HTML, CSS and Vanilla Javascript that has multiple questions and also has a timer."
               link="https://github.com/anmolft9/JS-Quiz"
@@ -114,7 +112,6 @@ export const Projects = () => {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={List}
-              isBlog={false}
               title="A simple To Do List"
               description="This is a ToDo list concept that allows user to insert and delete eveything they want to do or can be used for any other purposes."
               link="https://github.com/anmolft9/ToDo-List"
@@ -124,7 +121,6 @@ export const Projects = () => {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={YelpCamp}
-              isBlog={false}
               title="Yelp Camp"
               description="This is a webapp I have developed that could allow a user to post and advertise their campsites. I have built this project using HTML, CSS, JAVASCRIPT, NodeJS, Express, MongoDB and few other tools"
               link="https://github.com/anmolft9/YelpCamp"
@@ -134,7 +130,6 @@ export const Projects = () => {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={imageSearch}
-              isBlog={false}
               title="lookforImage"
               description="It is a simple image searching app that I have developed using React JAVASCRIPT, CSS, Semantic UI and API from unsplash"
               link="https://github.com/anmolft9/lookforImage/tree/master"
